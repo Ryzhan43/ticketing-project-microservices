@@ -23,7 +23,7 @@ public class ProjectController {
     @GetMapping
     public ResponseEntity<ResponseWrapper> getProjects(){
         List<ProjectDTO> projectDTOList = projectService.listAllProjects();
-        return ResponseEntity.ok(new ResponseWrapper("Projects are successfully retrieved",projectDTOList, HttpStatus.OK));
+        return ResponseEntity.ok(new ResponseWrapper("Projects a retrieved",projectDTOList, HttpStatus.OK));
     }
 
     @GetMapping("/{code}")
