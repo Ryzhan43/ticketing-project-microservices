@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -11,11 +12,13 @@
         <module name="task-service" />
         <module name="user-service" />
         <module name="project-service" />
+        <module name="discovery-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="app-client-management" target="11" />
       <module name="app-domain-model" target="11" />
+      <module name="discovery-service" target="11" />
       <module name="project-service" target="11" />
       <module name="task-service" target="11" />
       <module name="ticketing-project-microservices" target="11" />
@@ -26,6 +29,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="app-client-management" options="-parameters" />
       <module name="app-domain-model" options="-parameters" />
+      <module name="discovery-service" options="-parameters" />
       <module name="project-service" options="-parameters" />
       <module name="task-service" options="-parameters" />
       <module name="ticketing-project-microservices" options="-parameters" />
