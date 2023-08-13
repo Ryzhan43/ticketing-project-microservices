@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/app-client-management/app-client-management.iml" filepath="$PROJECT_DIR$/app-client-management/app-client-management.iml" />
       <module fileurl="file://$PROJECT_DIR$/app-domain-model/app-domain-model.iml" filepath="$PROJECT_DIR$/app-domain-model/app-domain-model.iml" />
       <module fileurl="file://$PROJECT_DIR$/discovery-service.iml" filepath="$PROJECT_DIR$/discovery-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway-service.iml" filepath="$PROJECT_DIR$/gateway-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/project-service/project-service.iml" filepath="$PROJECT_DIR$/project-service/project-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/task-service/task-service.iml" filepath="$PROJECT_DIR$/task-service/task-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/ticketing-project-microservices.iml" filepath="$PROJECT_DIR$/ticketing-project-microservices.iml" />
