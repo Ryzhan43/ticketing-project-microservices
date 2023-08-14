@@ -29,7 +29,7 @@
     <description>ticketing-project-microservices</description>
 
     <properties>
-        <java.version>20</java.version>
+        <java.version>11</java.version>
         <spring-boot.version>2.3.4.RELEASE</spring-boot.version>
         <modelmapper.version>2.3.9</modelmapper.version>
         <lombok.version>1.18.22</lombok.version>
