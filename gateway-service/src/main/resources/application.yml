@@ -11,21 +11,21 @@ spring:
         - id: user-service
           uri: lb://user-service
           predicates:
-            - Path=/cydeo/dev/user/**
+            - Path=/mryzhan/dev/user/**
           filters:
-            - RewritePath=/cydeo/dev/user/(?<segment>.*),/$\{segment}
+            - RewritePath=/mryzhan/dev/user/(?<segment>.*),/$\{segment}
         - id: project-service
           uri: lb://project-service
           predicates:
-            - Path=/cydeo/dev/project/**
+            - Path=/mryzhan/dev/project/**
           filters:
-            - RewritePath=/cydeo/dev/project/(?<segment>.*),/$\{segment}
+            - RewritePath=/mryzhan/dev/project/(?<segment>.*),/$\{segment}
         - id: task-service
           uri: lb://task-service
           predicates:
-            - Path=/cydeo/dev/task/**
+            - Path=/mryzhan/dev/task/**
           filters:
-            - RewritePath=/cydeo/dev/task/(?<segment>.*),/$\{segment}
+            - RewritePath=/mryzhan/dev/task/(?<segment>.*),/$\{segment}
 
 server:
   port: 8762

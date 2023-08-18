@@ -12,8 +12,11 @@ import com.mryzhan.repository.ProjectRepository;
 import com.mryzhan.service.ProjectService;
 import com.mryzhan.service.UserClientService;
 import com.mryzhan.util.MapperUtil;
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import org.springframework.stereotype.Service;
 
+import javax.swing.text.html.StyleSheet;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -106,6 +109,7 @@ public class ProjectServiceImpl implements ProjectService {
     }
 
     @Override
+    @CircuitBreaker(name="user-service", fallbackMethod = "userServiceFallBack")
     public List<ProjectDTO> listAllProjectDetails(String userName) throws ProjectServiceException {
 
         UserResponseDTO userResponseDto = userClientService.getUserDTOByUserName(userName);
@@ -132,6 +136,9 @@ public class ProjectServiceImpl implements ProjectService {
         throw new ProjectServiceException("user couldn't find");
     }
 
+    public List<ProjectDTO> userServiceFallBack(String username, Exception e){
+        return new ArrayList<>();
+    }
 
     @Override
     public List<ProjectDTO> readAllByAssignedManager(User user) {
