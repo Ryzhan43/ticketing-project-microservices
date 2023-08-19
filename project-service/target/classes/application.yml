@@ -1,4 +1,9 @@
 spring:
+  sleuth:
+    sampler:
+      probability: 1
+  zipkin:
+    base-url: http://host.docker.internal:9411
   application:
     name: project-service
   profiles:
@@ -15,12 +20,6 @@ spring:
     username: postgres
     password: admin
     driver-class-name: org.postgresql.Driver
-  sleuth:
-    sampler:
-      probability: 1
-  zipkin:
-    base-url: http://host.docker.internal:9411
-
 server:
   port: 9091
 
@@ -52,6 +51,7 @@ info:
     version: '0.0.1-SNAPSHOT'
     spring-cloud-version: '2.2.6.RELEASE'
     spring-boot-version: '0.0.1-SNAPSHOT'
+
 
 resilience4j:
   circuitbreaker:
