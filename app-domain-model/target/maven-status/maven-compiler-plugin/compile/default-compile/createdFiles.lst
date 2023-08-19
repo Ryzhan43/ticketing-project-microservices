@@ -1,0 +1,16 @@
+com\mryzhan\util\MapperUtil.class
+com\mryzhan\dto\RoleDTO.class
+com\mryzhan\dto\UserResponseDTO.class
+com\mryzhan\entity\Role.class
+com\mryzhan\enums\Status.class
+com\mryzhan\dto\ProjectDTO$ProjectDTOBuilder.class
+com\mryzhan\dto\TaskDTO.class
+com\mryzhan\entity\User.class
+com\mryzhan\dto\UserDTO.class
+com\mryzhan\entity\BaseEntity.class
+com\mryzhan\entity\ResponseWrapper.class
+com\mryzhan\dto\ProjectDTO.class
+com\mryzhan\entity\Task.class
+com\mryzhan\enums\Gender.class
+com\mryzhan\dto\UserDTO$UserDTOBuilder.class
+com\mryzhan\entity\Project.class

@@ -1,0 +1,6 @@
+com\mryzhan\service\TaskService.class
+com\mryzhan\respository\TaskRepository.class
+com\mryzhan\controller\TaskController.class
+com\mryzhan\exception\TaskServiceException.class
+com\mryzhan\TaskServiceApplication.class
+com\mryzhan\service\impl\TaskServiceImpl.class
