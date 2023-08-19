@@ -10,8 +10,12 @@ spring:
           uri: https://github.com/Ryzhan43/ticketing-project-microservices-config
           default-label: main
           username: Ryzhan43
-          password: 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
+          password: '{cipher}f0761026439b830027459fa084d5a7910acae4e3465c7859078ebaa9d36a894bfd4365ff2f5b1a8c417fab8fc9469dc4fc881b9e5d342215417f64111e10d1ab'
       fail-fast: true
+
+
+encrypt:
+  key: mryzhan
 
 server:
   port: 8888
