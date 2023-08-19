@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: git
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Ryzhan43/ticketing-project-microservices-config
+          default-label: main
+          username: Ryzhan43
+          password: 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
+      fail-fast: true
+
+server:
+  port: 8888
