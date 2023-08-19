@@ -1,6 +1,0 @@
-com\mryzhan\ProjectServiceApplication.class
-com\mryzhan\service\impl\ProjectServiceImpl.class
-com\mryzhan\service\ProjectService.class
-com\mryzhan\exception\ProjectServiceException.class
-com\mryzhan\repository\ProjectRepository.class
-com\mryzhan\controller\ProjectController.class
